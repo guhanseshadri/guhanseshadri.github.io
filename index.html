@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guhan Seshadri</title>
+<title>N.P. Guhan Seshadri</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,10 +11,12 @@
 
 <nav>
   <div class="nav-container">
-    <div class="logo">Guhan Seshadri, PhD</div>
+    <div class="logo">N.P. Guhan Seshadri</div>
     <div class="links">
+      <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
+      <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -22,16 +24,43 @@
 
 <section class="hero">
   <div class="hero-content">
+    <div class="hero-image">
+      <img src="assets/profile.jpg" alt="Profile Photo">
+    </div>
+
     <div class="hero-text">
-      <h1>Guhan Seshadri, PhD</h1>
+      <h1>N.P. Guhan Seshadri</h1>
       <p class="subtitle">
         Postdoctoral Researcher · Neurological Institute · Cleveland Clinic
       </p>
     </div>
-    <div class="hero-image">
-      <img src="assets/profile.jpg" alt="Profile Photo">
-    </div>
   </div>
+</section>
+
+<section id="about" class="content">
+  <h2>About Me</h2>
+  <p>
+  I am a Postdoctoral Researcher at the Neurological Institute, Cleveland Clinic.
+  My academic background is in biomedical engineering and computational signal
+  analysis, with formal training in electrophysiology, brain network modeling,
+  and machine learning.
+  </p>
+
+  <p>
+  I received my Ph.D. in Biomedical Engineering from the National Institute of
+  Technology Raipur, where my doctoral work examined functional brain network
+  organization in dyslexic children using EEG-based connectivity analysis.
+  My research combined graph-theoretic modeling and classification frameworks
+  to characterize task-dependent network reorganization.
+  </p>
+
+  <p>
+  Prior to my current role, I served as Assistant Professor in the Department
+  of Electronics and Communication Engineering at Amrita Vishva Vidyapeetham
+  and as Ad-Hoc Faculty in Biomedical Engineering at NIT Raipur, teaching
+  biomedical signal processing and instrumentation while continuing research
+  in electrophysiological network analysis.
+  </p>
 </section>
 
 <section id="research" class="content">
@@ -47,16 +76,6 @@
   I characterize pathological mesoscale topology and develop quantitative
   network biomarkers for seizure localization and surgical planning.
   </p>
-</section>
-
-<section class="content">
-  <h2>Current Directions</h2>
-  <ul>
-    <li>Interictal community detection in source-space MEG</li>
-    <li>Network instability and epileptogenic hubs</li>
-    <li>Graph-theoretic biomarkers for surgical outcome prediction</li>
-    <li>Machine learning integration with electrophysiology</li>
-  </ul>
 </section>
 
 <section id="publications" class="content">
@@ -75,6 +94,18 @@
   </p>
 </section>
 
+<section id="cv" class="content">
+  <h2>Curriculum Vitae</h2>
+  <p>
+  A complete academic CV including publications, teaching experience,
+  grants, and professional service is available below.
+  </p>
+
+  <a href="assets/guhanCV.pdf" class="cv-button" target="_blank">
+    Download CV (PDF)
+  </a>
+</section>
+
 <section id="contact" class="content">
   <h2>Contact</h2>
   <p>
@@ -87,8 +118,18 @@
 </section>
 
 <footer>
-  <p>© 2026 Guhan Seshadri</p>
+  <p>
+    © 2026 N.P. Guhan Seshadri<br>
+    Last updated: <span id="last-updated"></span>
+  </p>
 </footer>
+
+<script>
+  const lastModified = new Date(document.lastModified);
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById("last-updated").textContent =
+    lastModified.toLocaleDateString(undefined, options);
+</script>
 
 </body>
 </html>
