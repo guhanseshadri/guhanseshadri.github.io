@@ -63,8 +63,9 @@ nav {
 
 .hero-image img {
   width: 130px;      /* passport-style size */
-  height: auto;
-  border-radius: 4px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* CONTENT SECTIONS */
